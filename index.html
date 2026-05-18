@@ -204,7 +204,6 @@ const HOLDINGS = [
   { ticker:'OXY',   yfSym:'OXY',      name:'Occidental Petroleum',   shares:100,   avgCost:47.30,  exchange:'NYSE',  sector:'ind'  },
   { ticker:'BABA',  yfSym:'BABA',     name:'Alibaba',                shares:40,    avgCost:122.02, exchange:'NYSE',  sector:'tech' },
   { ticker:'UBS',   yfSym:'UBS',      name:'UBS Group',              shares:210,   avgCost:42.05,  exchange:'NYSE',  sector:'fin'  },
-  { ticker:'NU',    yfSym:'NU',       name:'Nu Holdings',            shares:400,   avgCost:14.52,  exchange:'NYSE',  sector:'fin'  },
   { ticker:'ADS',   yfSym:'ADS.DE',   name:'Adidas AG',              shares:58,    avgCost:134.97, exchange:'IBIS',  sector:'cons' },
   { ticker:'AIR',   yfSym:'AIR.PA',   name:'Airbus SE',              shares:70.38, avgCost:164.08, exchange:'SBF',   sector:'ind'  },
   { ticker:'MC',    yfSym:'MC.PA',    name:'LVMH',                   shares:28,    avgCost:510.26, exchange:'SBF',   sector:'cons' },
@@ -216,8 +215,10 @@ const HOLDINGS = [
 ];
 
 const CLOSED = [
-  { ticker:'AMD', name:'Advanced Micro Devices', sector:'tech', exchange:'NASDAQ',
+  { ticker:'AMD', name:'Advanced Micro Devices', sector:'fin', exchange:'NYSE',
     entryDate:'Dec 2025', exitDate:'April 2026', entryPrice:229.94, exitPrice:288.51 },
+  { ticker:'NU', name:'NU Holdings', sector:'tech', exchange:'NASDAQ',
+    entryDate:'April 2026', exitDate:'May 2026', entryPrice:14.52, exitPrice:11.97 },
 ];
 
 // ── Keep server awake — ping every 10 minutes ──────────────────
